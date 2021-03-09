@@ -1,27 +1,24 @@
 class Point {
-  constructor(private x?: number, private y?: number) {
+  constructor(private _x?: number, private _y?: number) {
     //   ? makes params optional
   }
 
   draw() {
-    console.log(`X: ${this.x}, Y: ${this.y}`);
+    console.log(`X: ${this._x}, Y: ${this._y}`);
   }
 
-  get X() {
-    return this.x;
+  get x() {
+    return this._x;
   }
-  set X(value) {
+  set x(value) {
     if (value < 0) {
       throw new Error("Value cannot be less than zero");
     }
-    this.x = value;
-  }
-  getY() {
-    return this.y;
+    this._x = value;
   }
 }
 
 let point = new Point(6, 5);
-let x = point.X;
-point.X = 10;
+let x = point.x;
+point.x = 10;
 point.draw();

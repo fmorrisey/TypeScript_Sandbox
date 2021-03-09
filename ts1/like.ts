@@ -9,14 +9,8 @@ export class Like {
   }
 
   onClick() {
-    if (this._clickedState == true) {
-      this._clickedState = false;
-      this._counter += 1;
-      this.clickStatus();
-    } else {
-      this._clickedState = true;
-      this._counter -= 1;
-      this.clickStatus();
-    }
+    this._counter += this._counter ? 1 : -1;
+    this._clickedState = !this._clickedState;
+    this.clickStatus();
   }
 }

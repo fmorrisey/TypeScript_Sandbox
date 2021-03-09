@@ -10,8 +10,6 @@ class Point {
     // ..
   }
 }
+
 let point = new Point();
-let cord;
-Point;
-point.x = 5;
-console.log(point);
+point.draw();

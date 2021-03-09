@@ -1,4 +1,4 @@
-import { Like } from "./like";
+import { LikeComponent } from "./like.component";
 
-let like = new Like();
+let like = new LikeComponent(true, 10);
 like.onClick();

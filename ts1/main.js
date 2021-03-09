@@ -1,5 +1,5 @@
 "use strict";
 exports.__esModule = true;
-var like_1 = require("./like");
-var like = new like_1.Like();
+var like_component_1 = require("./like.component");
+var like = new like_component_1.LikeComponent(true, 10);
 like.onClick();

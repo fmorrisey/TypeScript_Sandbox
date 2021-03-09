@@ -1,6 +1,4 @@
-import { Point } from "./point";
+import { Like } from "./like";
 
-let point = new Point(6, 5);
-let x = point.x;
-point.x = 10;
-point.draw();
+let like = new Like();
+like.onClick();

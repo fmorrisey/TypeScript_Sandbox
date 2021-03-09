@@ -1,4 +1,5 @@
 class Point {
+  // Member Variables
   x: number;
   y: number;
 
